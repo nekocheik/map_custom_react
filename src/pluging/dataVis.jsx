@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Map from './mapSvg';
 import Arrondissements from './Arrondissements';
 
-export default class dataVis extends Component {
+export default class DataVis extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -87,6 +87,6 @@ export default class dataVis extends Component {
 }
 
 
-dataVis.propTypes = {
-  data: PropTypes.array.isRequired,
+DataVis.propTypes = {
+  data: PropTypes.array,
 };

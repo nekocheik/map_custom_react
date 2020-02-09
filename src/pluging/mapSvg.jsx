@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class dataVis extends Component {
+export default class Map extends Component {
   constructor(props) {
     super(props);
     this.updateMap = this.updateMap.bind(this);
@@ -29,7 +29,7 @@ export default class dataVis extends Component {
         });
         elementArrondissements.addEventListener(('click'), () => {
         //  console.log(this.props.updateCurrentArrondissements(arrondissements))
-          updateCurrentArrondissements(arrondissements);
+          updateCurrentArrondissements(arrondissement);
         });
       });
     });
@@ -129,7 +129,7 @@ export default class dataVis extends Component {
 }
 
 
-dataVis.propTypes = {
+Map.propTypes = {
   arrondissementsGroup: PropTypes.array.isRequired,
   updateCurrentArrondissements: PropTypes.func.isRequired,
 };
